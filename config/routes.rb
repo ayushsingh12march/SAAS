@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   # get "todos/:id", to: "todos#show"
 
   resources :todos
-  resources :users
+
+  resources :users, only: [:create, :index]
+  post "users/login", to: "users#welcome"
 end
