@@ -1,0 +1,117 @@
+body{
+  font-family:  sans-serif !important;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.TodoPage-title{
+
+  font-size: 20px;
+  color: #453C52;
+  letter-spacing: 0.14px;
+  margin-top: 11.6%;
+  margin-bottom: 2.3%;
+  font-weight: bold;
+}
+
+h2{
+
+  font-size: 16px;
+  color: #453C52;
+  letter-spacing: 0.1px;
+}
+
+p{
+  margin-left: 5px;;
+}
+
+section{
+  margin-bottom: 14px;
+}
+
+.AddTodo{
+  display: flex;
+  height: 32px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+
+ .AddTodo-text{
+  background: #FFFFFF;
+  width:150px;
+  margin-right: 10px;
+  padding-left:10px;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  border-radius: 4px;
+
+}
+
+.AddTodo-date{
+  background: #FFFFFF;
+  width:115px;
+  margin-right: 10px;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  border-radius: 4px;
+}
+
+.AddTodo-btn{
+  background: #48BB78;
+  color: white;
+  width:70px;
+  border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #48BB78;
+}
+
+.AddTodo-btn:hover{
+  cursor:pointer;
+  border: 1px solid green;
+}
+
+.TodoSectionTitle{
+  display:flex;
+  padding: 0px;
+  font-weight: 550;
+}
+
+.TodoSectionTitle--remainingCount{
+  font-size: 12px;
+  color: #453C52;
+  letter-spacing: 0.09px;
+  margin-bottom: 10px;
+  font-weight: 100;
+
+}
+.TodoItem-container{
+  display: flex;
+  font-size: 14px;
+  color: #453C52;
+  letter-spacing: 0.1px;
+  margin-top: 5px;
+}
+
+.TodoItem-overdueLabel{
+  color: #C53030;
+  margin-right: 5px;
+}
+.TodoItem-remainingDate{
+  margin-right: 5px;
+}
+a{
+  display:none;
+}
+.TodoItem-bin{
+  width: 15px;
+  height: 15px;
+}
+label:hover > a {
+  display:block;
+}
+label:hover{
+  background-color: #F1EDF7;
+  max-width: 300px;
+  cursor: pointer;
+
+}
