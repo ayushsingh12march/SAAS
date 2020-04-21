@@ -92,10 +92,7 @@ section{
   margin-top: 5px;
 }
 
-.TodoItem-overdueLabel{
-  color: #C53030;
-  margin-right: 5px;
-}
+
 .TodoItem-remainingDate{
   margin-right: 5px;
 }
@@ -103,6 +100,7 @@ a{
   display:none;
 }
 .TodoItem-bin{
+
   width: 15px;
   height: 15px;
 }
