@@ -11,74 +11,9 @@
           <% if show_due_date %>
             <p class="TodoItem-remainingDate"><%= todo.due_date.to_s(:short) %></p>
           <% end %>
-          <a class="TodoItem-delete" href="Javascript:void(0)"><img class="TodoItem-bin" src="bin.svg"
-              alt="bin"></a>
+          <a class="TodoItem-delete" href="Javascript:void(0)"><%= image_tag 'bin.svg', :class =>"TodoItem-bin" %></a>
         </label>
       </li>
     <% end %>
-    <%# <li class="TodoItem">
-      <label class="TodoItem-container">
-        <input class="TodoItem-checkbox" type="checkbox">
-        Play Video game
-        <p class="TodoItem-overdueLabel"></p>
-        <a class="TodoItem-delete" href="Javascript:void(0)"><img class="TodoItem-bin" src="bin.svg"
-            alt="bin"></a>
-      </label>
-    </li>
-  </ul>
-</section>
-<section class="TodoSection">
-  <div class="TodoSectionTitle">
-    <h2 class="TodoSectionTitle--text">Due Tomorrow </h2>
-    <p class="TodoSectionTitle--remainingCount">0/3</p>
-  </div>
-  <ul>
-    <li class="TodoItem">
-      <label class="TodoItem-container">
-        <input class="TodoItem-checkbox" type="checkbox">
-        Type Something
-        <p class="TodoItem-overdueLabel"></p>
-        <a class="TodoItem-delete" href="Javascript:void(0)"><img class="TodoItem-bin" src="bin.svg"
-            alt="bin"></a>
-      </label>
-    </li>
-  </ul>
-</section>
-<section class="TodoSection">
-  <div class="TodoSectionTitle">
-    <h2 class="TodoSectionTitle--text">Remaining </h2>
-    <p class="TodoSectionTitle--remainingCount">0/3</p>
-  </div>
-  <ul>
-    <li class="TodoItem">
-      <label class="TodoItem-container">
-        <input class="TodoItem-checkbox" type="checkbox">
-        Type Something
-        <p class="TodoItem-overdueLabel"></p>
-        <p class="TodoItem-remainingDate">Jan 21</p>
-        <a class="TodoItem-delete" href="Javascript:void(0)"><img class="TodoItem-bin" src="bin.svg"
-            alt="bin"></a>
-      </label>
-    </li>
-    <li class="TodoItem">
-      <label class="TodoItem-container">
-        <input class="TodoItem-checkbox" type="checkbox">
-        Type Something
-        <p class="TodoItem-overdueLabel"></p>
-        <p class="TodoItem-remainingDate">Jan 22</p>
-        <a class="TodoItem-delete" href="Javascript:void(0)"><img class="TodoItem-bin" src="bin.svg"
-            alt="bin"></a>
-      </label>
-    </li>
-    <li class="TodoItem">
-      <label class="TodoItem-container">
-        <input class="TodoItem-checkbox" type="checkbox">
-        Type Something
-        <p class="TodoItem-overdueLabel"></p>
-        <p class="TodoItem-remainingDate">Jan 23</p>
-        <a class="TodoItem-delete" href="Javascript:void(0)"><img class="TodoItem-bin" src="bin.svg"
-            alt="bin"></a>
-      </label>
-    </li> %>
   </ul>
 </section>
