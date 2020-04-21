@@ -1,7 +1,7 @@
 <section class="TodoSection">
   <div class="TodoSectionTitle">
     <h2 class="TodoSectionTitle--text"><%= section_title %></h2>
-    <p class="TodoSectionTitle--remainingCount"><%=todos_completed%>/<%=todos.count%></p>
+    <p class="TodoSectionTitle--remainingCount"><%=todos_completed%>/<%= total_todos%></p>
   </div>
   <ul>
     <% todos.each do |todo| %>

@@ -18,11 +18,12 @@
         <input class="AddTodo-date" type="date" />
         <input class="AddTodo-btn" type="button" value="Add" />
       </section>
-
+      <%todos = Todo.overdue%>
       <%= render partial: "todo-section", locals: {
         section_title: "Overdue",
         todos: Todo.overdue_and_incomplete,
-        todos_completed: Todo.overdue.completed.count,
+        todos_completed: todos.completed.count,
+        total_todos: todos.count,
         show_due_date: true
       }%>
       <%todos = Todo.due_today%>
@@ -30,6 +31,7 @@
         section_title: "Due Today",
         todos: todos,
         todos_completed: todos.completed.count,
+        total_todos: todos.count,
         show_due_date: false
       }%>
       <%todos = Todo.due_later%>
@@ -37,6 +39,7 @@
         section_title: "Due Later",
         todos: todos,
         todos_completed: todos.completed.count,
+        total_todos: todos.count,
         show_due_date: true
       }%>
 
