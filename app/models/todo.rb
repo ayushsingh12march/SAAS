@@ -4,6 +4,10 @@ class Todo < ActiveRecord::Base
     "#{id}. #{due_date.to_s(:long)} #{todo_text} #{is_completed}"
   end
 
+  def self.overdue_and_incomplete
+    all.where("due_date < ? AND completed = ?", Date.today, false)
+  end
+
   def self.overdue
     all.where("due_date < ?", Date.today)
   end

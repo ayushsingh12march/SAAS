@@ -95,6 +95,9 @@ section{
 .TodoItem-checkbox{
   margin:auto 5px;
 }
+.Strikethrough + span{
+  text-decoration: line-through;
+}
 .TodoItem-remainingDate{
   margin: auto 5px;
   color: rgb(94, 81, 112);
@@ -106,7 +109,7 @@ a{
 .TodoItem-bin{
   margin-left: 5px;
   width: 15px;
-  height: 15px;
+  height: 14px;
 }
 label:hover > a {
   display:block;

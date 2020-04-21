@@ -21,19 +21,22 @@
 
       <%= render partial: "todo-section", locals: {
         section_title: "Overdue",
-        todos: Todo.overdue,
+        todos: Todo.overdue_and_incomplete,
+        todos_completed: Todo.overdue.completed.count,
         show_due_date: true
       }%>
-
+      <%todos = Todo.due_today%>
       <%= render partial: "todo-section", locals: {
         section_title: "Due Today",
-        todos: Todo.due_today,
+        todos: todos,
+        todos_completed: todos.completed.count,
         show_due_date: false
       }%>
-
+      <%todos = Todo.due_later%>
       <%= render partial: "todo-section", locals: {
         section_title: "Due Later",
-        todos: Todo.due_later,
+        todos: todos,
+        todos_completed: todos.completed.count,
         show_due_date: true
       }%>
 
