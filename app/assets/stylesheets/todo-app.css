@@ -94,7 +94,9 @@ section{
 
 
 .TodoItem-remainingDate{
-  margin-right: 5px;
+  margin: auto 5px;
+  color: rgb(94, 81, 112);
+  font-size: 12px;
 }
 a{
   display:none;
