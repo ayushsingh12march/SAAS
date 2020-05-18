@@ -87,6 +87,8 @@ section{
   font-weight: 100;
 
 }
+
+
 .TodoItem-container{
   display: flex;
   font-size: 14px;
@@ -98,13 +100,15 @@ section{
 .TodoItem-checkbox{
   margin:auto 5px;
 }
-.Strikethrough + span{
+.TodoItem-checkbox-strikethrough + span{
   text-decoration: line-through;
 }
 .TodoItem-remainingDate{
-  margin: auto 5px;
   color: rgb(94, 81, 112);
   font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a{
   display:none;
@@ -113,6 +117,9 @@ a{
   margin-left: 5px;
   width: 15px;
   height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 label:hover > a {
   display:block;

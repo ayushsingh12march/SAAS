@@ -11,7 +11,7 @@
     <%todos = Todo.overdue%>
     <%= render partial: "todo-section", locals: {
       section_title: "Overdue",
-      todos: Todo.overdue_and_incomplete,
+      todos: todos,
       todos_completed: todos.completed.count,
       total_todos: todos.count,
       show_due_date: true
