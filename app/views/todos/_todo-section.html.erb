@@ -21,7 +21,7 @@
           <% end %>
           <a class="TodoItem-delete" href="Javascript:void(0)">
             <%= form_with(url: "/todos/#{todo.id}", method: "delete") do%>
-              <input type="image" src="/assets/bin.svg" alt="delete" class="TodoItem-bin"  onclick="this.form.submit()"/>
+              <input type="image" src="bin.svg" alt="delete" class="TodoItem-bin" />
             <%end%>
           </a>
 
