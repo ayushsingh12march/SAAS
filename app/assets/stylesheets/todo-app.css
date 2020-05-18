@@ -36,7 +36,8 @@ section{
   margin-bottom: 24px;
 }
 
- .AddTodo-text{
+ #todo_text{
+  height:25px ;
   background: #FFFFFF;
   width:150px;
   margin-right: 10px;
@@ -47,9 +48,10 @@ section{
 
 }
 
-.AddTodo-date{
+#due_date{
+  height: 25px;
   background: #FFFFFF;
-  width:115px;
+  width:135px;
   margin-right: 10px;
   border: 1px solid #BFB8CC;
   border-radius: 4px;
@@ -57,7 +59,8 @@ section{
 }
 
 .AddTodo-btn{
-  background: #48BB78;
+  height: 25px;
+  background: #48BB78 !important;
   color: white;
   width:70px;
   border-radius: 4px;

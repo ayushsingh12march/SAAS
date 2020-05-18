@@ -2,9 +2,11 @@
   <article>
     <h1 class="TodoPage-title">My Todo-list</h1>
     <section class="AddTodo">
-      <input class="AddTodo-text" type="text" placeholder="What's next" />
-      <input class="AddTodo-date" type="date" />
-      <input class="AddTodo-btn" type="button" value="Add" />
+      <%= form_with(url: "/todos", method: "post") do %>
+        <%= text_field_tag :todo_text,nil,class: "AddTodo-text",placeholder: "What's next" %>
+        <%= date_field("due", "date", min: "1999-05-20",class: "AddTodo-date") %>
+        <%= button_tag(type: "submit",class: "AddTodo-btn") do%>Add<%end%>
+      <% end %>
     </section>
     <%todos = Todo.overdue%>
     <%= render partial: "todo-section", locals: {
